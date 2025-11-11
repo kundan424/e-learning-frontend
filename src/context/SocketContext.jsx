@@ -3,6 +3,10 @@ import { useAuth } from '../hooks/useAuth'
 import SockJS from 'sockjs-client'
 import { Client } from "@stomp/stompjs";
 
+// 1. Get the base URL (without /api)
+const BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8080';
+// 2. Remove /api from the URL
+const SOCKET_URL = BASE_URL.replace("/api", "");
 
 const SocketContext = createContext();
 
@@ -17,16 +21,16 @@ export const SocketProvider = ({ children }) => {
     useEffect(() => {
         if (user) {
             const client = new Client({
-                webSocketFactory: () => new SockJS('http://localhost:8080/ws'),
+                webSocketFactory: () => new SockJS(`${SOCKET_URL}/ws`),
                 connectHeaders: {
                     Authorization: `Bearer ${token}`,
                 },
                 reconnectDelay: 5000, // Auto reconnect after 5s
-                
+
                 debug: (msg) => {
                     console.log('STOMP DEBUG:', msg);
                 }, // Disable logging
-                
+
                 onConnect: (frame) => {
                     console.log('STOMP connected:', frame);
                     setIsConnected(true);
