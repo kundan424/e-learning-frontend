@@ -10,7 +10,18 @@ export default {
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
         Inter: ['Inter'],
-        Roboto : ['Roboto']
+        Roboto: ['Roboto']
+      },
+      colors: {
+        'custom-blue': '#0D5EA6',
+        'dark-blue' : "#064175", 
+        'custom-gray': '#444444',
+        'custom-dark-gray': '#212121',
+        'lavender': '#BB86FE', 
+        'bright-green' : '#1CB55D',
+        'custom-teal' : '#14B8A6',
+        'light-teal' : '#2DD4BF',
+        'peach' : '#FFFFFF'
       },
     },
   },

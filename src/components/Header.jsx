@@ -10,7 +10,7 @@ function Header() {
 
     return (
         <header className="flex items-center justify-between bg-white p-4 shadow-md">
-            <h1 className="text-3xl font-bold text-blue-600">
+            <h1 className="text-3xl font-bold text-custom-blue">
                 <Link to="/">E-Learning</Link>
             </h1>
             <nav>
@@ -18,20 +18,20 @@ function Header() {
                     <div className="flex items-center space-x-6">
                         <NotificationBell />
 
-                        <Link to="/messages" className="font-medium text-gray-600 hover:text-blue-600">
+                        <Link to="/messages" className="font-medium text-gray-600 hover:text-custom-blue">
                             Messages
                         </Link>
                         
                         {isStudent && (
 
-                            <Link to="/my-courses" className="font-medium text-gray-600 hover:text-blue-600">
+                            <Link to="/my-courses" className="font-medium text-gray-600 hover:text-custom-blue">
                                 My Courses
                             </Link>
 
                         )}
 
                         {isInstructor && (
-                            <Link to="/instructor/dashboard" className="font-medium text-gray-600 hover:text-blue-600">
+                            <Link to="/instructor/dashboard" className="font-medium text-gray-600 hover:text-custom-blue">
                                 Dashboard
                             </Link>
                         )}

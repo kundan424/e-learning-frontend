@@ -58,7 +58,7 @@ function CourseEditorPage() {
 
     return (
         <div className="min-h-screen bg-gray-100">
-            <Header />
+         
             <main className="container mx-auto p-8">
                 <Link to="/instructor/dashboard" className="mb-4 inline-block text-blue-600 hover:underline">
                     &larr; Back to Dashboard

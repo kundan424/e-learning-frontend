@@ -21,7 +21,7 @@ function CourseCard({ course }) {
         </div>
         <Link
           to={`/course/${course.id}`}
-          className="inline-block rounded-md bg-blue-600 px-4 py-2 text-center font-semibold text-white transition-colors duration-200 hover:bg-blue-700"
+          className="inline-block rounded-md bg-custom-blue px-4 py-2 text-center font-semibold text-white transition-colors duration-200 hover:bg-dark-blue"
         >
           View Details
         </Link>

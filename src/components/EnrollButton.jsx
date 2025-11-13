@@ -25,7 +25,7 @@ function EnrollButton({ courseId }) {
             <button
                 onClick={handleClick}
                 disabled={loading}
-                className="w-full rounded-lg bg-green-600 px-6 py-3 text-lg font-bold text-white shadow-md transition-all hover:bg-green-700 disabled:cursor-not-allowed disabled:opacity-50"
+                className="w-1/6 rounded-lg bg-custom-blue px-6 py-3 text-lg font-bold text-white shadow-md transition-all hover:bg-dark-blue disabled:cursor-not-allowed disabled:opacity-50"
             >
                 {loading ? 'Enrolling...' : 'Enroll Now'}
             </button>

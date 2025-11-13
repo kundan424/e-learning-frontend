@@ -1,18 +1,16 @@
 import React from 'react';
-import Header from '../components/Header';
-import CourseList from '../components/CourseList';
+import FeaturesSection from '../components/landing/FeaturesSection'
+import FeaturedCourses from '../components/landing/FeaturedCourses'
+import HeroSection from '../components/landing/HeroSection';
+
 
 function HomePage() {
     return (
-        <div className="min-h-screen bg-gray-50">
-            <Header />
-            <main className="container mx-auto p-4">
-                <h2 className="my-6 text-center text-4xl font-bold text-gray-800">
-                    Available Courses
-                </h2>
-                <CourseList />
-            </main>
-        </div>
+        <>
+            <HeroSection />
+            <FeaturesSection />
+            <FeaturedCourses />
+        </>
     );
 }
 

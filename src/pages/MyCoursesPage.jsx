@@ -44,7 +44,7 @@ function MyCoursesPage() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <Header />
+    
       <main className="container mx-auto p-4">
         <h2 className="my-6 text-center text-4xl font-bold text-gray-800">
           My Enrolled Courses

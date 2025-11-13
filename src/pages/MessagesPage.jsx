@@ -115,7 +115,7 @@ function MessagesPage() {
 
     return (
         <div className="flex h-screen flex-col">
-            <Header />
+           
             <div className="flex h-[calc(100vh-68px)]"> {/* Full height minus header */}
                 {/* Left Column: Contact List */}
                 <div className="w-1/3 border-r border-gray-200 bg-white">

@@ -1,9 +1,10 @@
 import React from 'react'
 import EnrollButton from './EnrollButton'
+import { Link, Links } from 'react-router-dom'
 
 function CourseInfo({ course, user, isUserEnrolled, isInstructor }) {
   return (
-    <div className="mb-6 rounded-lg bg-white p-6 shadow-md">
+    <div className="mb-6 rounded-lg p-6 ">
       <h1 className="text-4xl font-bold text-gray-800">{course.title}</h1>
       <p className="mt-2 text-lg text-gray-600">{course.description}</p>
       <p className="mt-4 text-gray-700">
@@ -17,9 +18,11 @@ function CourseInfo({ course, user, isUserEnrolled, isInstructor }) {
       )}
 
       {user && isUserEnrolled && (
-        <p className="mt-4 rounded-md bg-green-100 p-3 text-center font-semibold text-green-700">
-          You are enrolled in this course.
+        <Link to={`/course/${course.id}`}>
+        <p className="w-1/6 mt-4 rounded-md bg-custom-blue p-3 text-center font-semibold text-white">
+          Go to course
         </p>
+        </Link>
       )}
     </div>
   )
