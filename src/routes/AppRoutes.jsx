@@ -19,14 +19,13 @@ const AppRoutes = () => {
     return (
 
         <Routes>
-
-            <Route path="/login" element={<LoginPage />} />
-            <Route path="/register" element={<RegisterPage />} />
-
             <Route element={<Layout />} >
 
                 <Route path="/" element={<HomePage />} />
                 <Route path="/courses" element={<AllCoursesPage />} />
+                <Route path="/login" element={<LoginPage />} />
+                <Route path="/register" element={<RegisterPage />} />
+
                 <Route element={<ProtectedRoute />}>
                     <Route path="/my-courses" element={<MyCoursesPage />} />
                     <Route path="/course/:courseId" element={<CourseDetailsPage />} />

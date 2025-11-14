@@ -26,12 +26,12 @@ function LoginPage() {
     };
 
     return (
-        <div className="flex items-center justify-center min-h-screen font-Inter bg-peach ">
-            <div className="bg-white p-8 rounded-2xl shadow-2xl w-full max-w-md transform transition-all hover:scale-[1.02]">
+        <div className="flex items-center justify-center min-h-screen font-Inter">
+            <div className="bg-white p-8 rounded-2xl shadow-2xl w-full max-w-md transform transition-all hover:scale-[1.02] ">
                 <h2 className="text-3xl font-bold text-center text-gray-800 mb-6 bg-">
                     Welcome Back 
                 </h2>
-                <form onSubmit={handleSubmit} className="space-y-5">
+                <form onSubmit={handleSubmit} className="space-y-5 ">
                     <div>
                         <label className="block text-sm font-semibold text-gray-600 mb-2">
                             Username

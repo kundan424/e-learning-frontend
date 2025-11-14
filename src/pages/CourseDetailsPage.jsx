@@ -53,7 +53,7 @@ function CourseDetailsPage() {
 
 
   return (
-    <div className="min-h-screen bg-peach">
+    <div className="min-h-screen ">
 
       {/* COURSE INFO */}
       <CourseInfo

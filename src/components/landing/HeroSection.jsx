@@ -6,9 +6,8 @@ function HeroSection() {
     const { user } = useAuth();
 
     return (
-        <div className="bg-white">
-            <div className="container mx-auto grid grid-cols-1 items-center gap-8 px-4 py-16 md:grid-cols-2 md:py-24">
-                {/* Text Content */}
+        <div className=''>
+            <div className="container mx-auto grid grid-cols-1 items-center gap-8 px-12 py-1 md:grid-cols-2 md:py-12">
                 <div className="text-center md:text-left">
                     <h1 className="text-4xl font-bold text-gray-800 md:text-5xl lg:text-6xl">
                         Find Your Future.
@@ -28,12 +27,11 @@ function HeroSection() {
                 </div>
 
                 {/* Image/Graphic */}
-                <div className="hidden md:block">
-                    {/* Use a high-quality, free image from unDraw, Pexels, etc. */}
+                <div className="flex items-center justify-end  md:h-72 lg:h-auto">
                     <img
-                        src="/Hero.jpg"
-                        alt="Person learning at a computer"
-                        className="rounded-lg shadow-xl"
+                        src="/Hero.png"
+                        alt="Students learning together"
+                        className="w-80 max-h-full object-contain" // h-full and max-h-full
                     />
                 </div>
             </div>
@@ -42,3 +40,5 @@ function HeroSection() {
 }
 
 export default HeroSection;
+
+

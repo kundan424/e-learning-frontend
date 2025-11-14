@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -6,21 +7,37 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
         {/* Brand */}
         <div>
-          <h2 className="text-xl font-semibold text-white mb-4">YourBrand</h2>
-          <p className="text-sm leading-relaxed">
-            A modern e-learning platform delivering high-quality courses, skill
-            development programs, and career-focused learning paths.
-          </p>
+          <h2 className="text-xl font-semibold text-white mb-4">E-learning</h2>
+
         </div>
 
         {/* Learning Links */}
         <div>
           <h3 className="text-lg font-semibold text-white mb-3">Learning</h3>
           <ul className="space-y-2 text-sm">
-            <li className="hover:text-white cursor-pointer">Courses</li>
-            <li className="hover:text-white cursor-pointer">Programs</li>
-            <li className="hover:text-white cursor-pointer">Certifications</li>
-            <li className="hover:text-white cursor-pointer">Skill Paths</li>
+            {/* Note: The hover/cursor styles are moved from <li> to <Link>.
+      The 'to' prop defines the path.
+    */}
+            <li>
+              <Link to="/" className="hover:text-white cursor-pointer">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link to="/courses" className="hover:text-white cursor-pointer">
+                Courses
+              </Link>
+            </li>
+            <li>
+              <Link to="/courses" className="hover:text-white cursor-pointer">
+                Programs
+              </Link>
+            </li>
+            <li>
+              <Link to="/courses" className="hover:text-white cursor-pointer">
+                Certifications
+              </Link>
+            </li>
           </ul>
         </div>
 
@@ -49,7 +66,7 @@ export default function Footer() {
 
       {/* Divider */}
       <div className="border-t border-gray-700 mt-10 pt-6 text-center text-sm text-gray-400">
-        © {new Date().getFullYear()} YourBrand. All rights reserved.
+        © {new Date().getFullYear()} All rights reserved.
       </div>
     </footer>
   );
