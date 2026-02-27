@@ -16,12 +16,12 @@ function CourseInfo({ course, user, isUserEnrolled, isInstructor }) {
           <EnrollButton courseId={course.id} />
         </div>
       )}
-
+        
       {user && isUserEnrolled && (
         <Link to={`/course/${course.id}`}>
-        <p className="w-1/6 mt-4 rounded-md bg-custom-blue p-3 text-center font-semibold text-white">
-          Go to course
-        </p>
+          <p className="w-1/6 mt-4 rounded-md bg-custom-blue p-3 text-center font-semibold text-white">
+            Go to course
+          </p>
         </Link>
       )}
     </div>

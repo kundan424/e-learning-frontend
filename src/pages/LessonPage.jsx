@@ -38,7 +38,7 @@ function LessonPage() {
     if (!lesson) return <p className="p-8 text-center text-lg text-gray-500">Lesson not found.</p>;
 
     return (
-        <div className='min-h-screen bg-gray-100 p-8'>
+        <div className='min-h-screen bg-gray-100 p-8 font-Delius'>
             <div className="mx-auto max-w-4xl">
                 <Link
                     to={`/course/${courseId}`}
