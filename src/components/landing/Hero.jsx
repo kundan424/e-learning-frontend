@@ -1,5 +1,6 @@
 import React from "react";
 
+import { useNavigate } from "react-router-dom";
 import HeroGirl from "../../assets/hero/hero-girl.png";
 import CalendarIcon from "../../assets/hero/icon-calendar.svg";
 import MailIcon from "../../assets/hero/icon-mail.svg";
@@ -7,7 +8,11 @@ import ChartIcon from "../../assets/hero/icon-chart.svg";
 import PlayIcon from "../../assets/hero/play-icon.svg";
 import Ellipse from "../../assets/hero/Ellipse.png";
 
+
 function Hero() {
+
+    const navigate = useNavigate();
+
     return (
 
         <section className="relative overflow-hidden bg-Aqua pt-10 pb-40">
@@ -32,7 +37,9 @@ function Hero() {
                     <div className="mt-10 flex items-center gap-8">
 
                         {/* JOIN BUTTON */}
-                        <button className="px-8 py-4 rounded-full bg-white/20 backdrop-blur text-white font-semibold text-lg hover:bg-white/30 transition">
+                        <button
+                            onClick={() => navigate('/register')}
+                            className="px-8 py-4 rounded-full bg-white/20 backdrop-blur text-white font-semibold text-lg hover:bg-white/30 transition">
                             Join for free
                         </button>
 
