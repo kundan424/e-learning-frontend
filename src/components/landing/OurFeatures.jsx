@@ -8,7 +8,7 @@ import Users from "../../assets/features/users.svg";
 import toolUsers from "../../assets/features/toolUsers.svg";
 
 import QuizCard from "../../assets/features/Quiz.png";
-import Gradebook from "../../assets/features/gradebook.png";
+import Gradebook from "../../assets/features/GradeBook.png";
 import Discussion from "../../assets/features/Discussion.png";
 
 const OurFeatures = () => {
