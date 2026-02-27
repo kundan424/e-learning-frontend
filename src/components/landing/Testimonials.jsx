@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Replace this with your actual image path
-import StudentImage from "../../assets/testimonials/student-bg.png";
+import StudentImage from "../../assets/Testimonials/student-bg.png";
 
 const Testimonials = () => {
   return (
