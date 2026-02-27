@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useAuth } from '../../hooks/useAuth';
 
 import Avatar from '../../assets/navbar/profile-avatar.png';
-import Chevron from '../../assets/navbar/chevron.svg';
+import Chevron from '../../assets/navbar/dropDown.svg';
 
 function Navbar() {
   const { user, logoutAction } = useAuth();
