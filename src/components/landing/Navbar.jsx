@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../../hooks/useAuth';
 
-import Logo from '../../assets/navbar/logo.svg';
 import Avatar from '../../assets/navbar/profile-avatar.png';
 import Chevron from '../../assets/navbar/chevron.svg';
 
